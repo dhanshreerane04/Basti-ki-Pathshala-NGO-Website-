@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer </title>
+    <link rel="stylesheet" href="style (1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   
+</head>
+<body>
+  <header class="icon">
+    <a href="index (3).html">
+  <i class="fas fa-home"></i></a>
+  </header>
+
+  <form class="volunteer-form" action="#" method="post" enctype="multipart/form-data">
+  <h2>Volunteer Form</h2>
+
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required><br>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" required><br>
+
+  <label>Gender:</label><br>
+  <input type="radio" name="gender" value="Male" required> Male
+  <input type="radio" name="gender" value="Female"> Female
+  <input type="radio" name="gender" value="Other"> Other<br><br>
+
+  <label for="location">City / Location:</label>
+  <input type="text" id="location" name="location" required><br>
+
+  <label for="area">Preferred Volunteering Area:</label><br>
+  <input type="checkbox" name="area" value="Teaching"> Teaching<br>
+  <input type="checkbox" name="area" value="Fundraising"> Fundraising<br>
+  <input type="checkbox" name="area" value="Event Support"> Event Support<br>
+  <input type="checkbox" name="area" value="Content Creation"> Social Media / Content Creation<br>
+  <input type="checkbox" name="area" value="Admin"> Admin Work<br><br>
+
+  <label for="availability">Availability:</label>
+  <select id="availability" name="availability">
+    <option value="Weekdays">Weekdays</option>
+    <option value="Weekends">Weekends</option>
+    <option value="Both">Both</option>
+  </select><br>
+
+  <label for="why">Why do you want to volunteer with us?</label><br>
+  <textarea id="why" name="why" rows="4" cols="40" required></textarea><br>
+
+  <label for="resume">Upload Resume (optional):</label>
+  <input type="file" id="resume" name="resume"><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

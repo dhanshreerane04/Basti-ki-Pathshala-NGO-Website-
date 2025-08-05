@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="style (1).css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<header class="icon">
+    <a href="index.html">
+  <i class="fas fa-home"></i></a>
+  </header>
+
+<section id="donate">
+  <h2>Support Our Cause</h2>
+  <p>Your donation helps us provide quality education to children in underserved communities. Every contribution counts!</p>
+
+  <form action="#" method="post">
+    <label for="donorName">Full Name:</label>
+    <input type="text" id="donorName" name="donorName" required><br>
+
+    <label for="donorEmail">Email Address:</label>
+    <input type="email" id="donorEmail" name="donorEmail" required><br>
+
+    <label for="donorPhone">Phone Number:</label>
+    <input type="tel" id="donorPhone" name="donorPhone"><br>
+
+    <label>Choose Amount:</label><br>
+    <input type="radio" name="amount" value="100" required> ₹100
+    <input type="radio" name="amount" value="500"> ₹500
+    <input type="radio" name="amount" value="1000"> ₹1000
+    <input type="radio" name="amount" value="custom"> Other:
+    <input type="number" name="customAmount" placeholder="₹"><br><br>
+
+    <label for="message">Message (optional):</label><br>
+    <textarea name="message" rows="3" cols="40"></textarea><br>
+
+    <button type="submit">Donate Now</button>
+  </form>
+</section>

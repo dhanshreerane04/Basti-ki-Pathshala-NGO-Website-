@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.site-title h1 {
+  font-size: 24px;
+  color: #2c3e50;
+  
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff6b6b;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+
+#home {
+  position: relative;
+  min-height: 100vh;
+  background: url("img/back.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+.home-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.donate-btn {
+  padding: 12px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.donate-btn:hover {
+  background-color: #ff4a4a;
+}
+#about h2 {
+  font-size: 32px;
+  margin-bottom:20px;
+  text-align: center;
+  margin-top: 50px;
+  
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.about-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-image {
+  flex: 1 1 40%;
+}
+
+.about-image img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 1 1 55%;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Optional: To clear float after the images */
+#about::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+}
+/*form styling*/
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"],
+.donate-btn {
+  margin-top: 20px;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+}
+
+button[type="submit"]:hover,
+.donate-btn:hover {
+  background-color: #e65050;
+}
+
+/* Optional: center text in donate section */
+#donate {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fdfdfd;
+}
+
+#donate h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+#donate p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  font-size: 16px;
+}
+.form-bg {
+  background: url("img/back.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volunteer-form {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  color: #000;
+}
+
+.volunteer-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.volunteer-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.volunteer-form input,
+.volunteer-form textarea,
+.volunteer-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.volunteer-form button {
+  width: 100%;
+  padding: 10px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+i.fas.fa-home {
+  font-size: 24px;
+  color: black;
+  margin: 10px;
+}
+
+
